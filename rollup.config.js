@@ -1,4 +1,4 @@
-import path from 'path'
+import path from 'node:path'
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import postcss from 'rollup-plugin-postcss'
@@ -17,19 +17,19 @@ const options = [
       vue({ css: false }),
       postcss({
         plugins: [autoprefixer(), cssnano()],
-        extract: path.resolve('lib/style.css'),
+        extract: path.resolve('dist/style.css'),
       }),
       buble(),
     ],
     external: ['vue', 'echarts/core'],
     output: [
       {
-        file: 'lib/index.esm.js',
+        file: 'dist/index.esm.js',
         format: 'es',
         sourcemap: true,
       },
       {
-        file: 'lib/index.esm.min.js',
+        file: 'dist/index.esm.min.js',
         format: 'es',
         sourcemap: true,
         plugins: [
@@ -41,13 +41,13 @@ const options = [
         ],
       },
       {
-        file: 'lib/index.cjs.js',
+        file: 'dist/index.cjs.js',
         format: 'cjs',
         exports: 'named',
         sourcemap: true,
       },
       {
-        file: 'lib/index.cjs.min.js',
+        file: 'dist/index.cjs.min.js',
         format: 'cjs',
         exports: 'named',
         sourcemap: true,

@@ -346,32 +346,32 @@ export default {
 
 ## Props
 
-| Attribute | Description | Type | Default |
-| --- | --- | --- | --- |
-| is-empty | Whether to display an empty state. | boolean | false |
-| image | An empty image address. | string | - |
-| image-size | Image size (width). | number | - |
-| description | Text description of an empty state. | string | - |
-| define-option | A function that returns a non-reactive configuration. | function | noop |
-| option | Reactive configuration. | object | {} |
-| theme | Theme to be applied. See `echarts.init`'s [`theme`](https://echarts.apache.org/zh/api.html#echarts.init) | [object, string] | {} |
-| group | Group name to be used in chart [connection](https://echarts.apache.org/zh/api.html#echarts.connect). See [`echartsInstance.group`](https://echarts.apache.org/zh/api.html#echartsInstance.group) | object | {} |
-| init-options | Optional chart init configurations. See `echarts.init`'s [`opts`](https://echarts.apache.org/zh/api.html#echarts.init) | object | {} |
-| update-options | Options for updating chart option. See `echartsInstance.setOption`'s [`opts`](https://echarts.apache.org/zh/api.html#echartsInstance.setOption) | object | {} |
-| onChartReady | The callback function after initializing the chart. | function(instance) | undefined |
-| auto-resize | Whether the chart should be resized automatically whenever its root is resized. | boolean | false |
-| loading | Whether the chart is in loading state. | boolean | false |
-| loading-options | Configuration item of loading animation. See `echartsInstance.showLoading`'s [`opts`](https://echarts.apache.org/zh/api.html#echartsInstance.showLoading) | object | {} |
+| Attribute       | Description                                                                                                                                                                                      | Type               | Default   |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | --------- |
+| is-empty        | Whether to display an empty state.                                                                                                                                                               | boolean            | false     |
+| image           | An empty image address.                                                                                                                                                                          | string             | -         |
+| image-size      | Image size (width).                                                                                                                                                                              | number             | -         |
+| description     | Text description of an empty state.                                                                                                                                                              | string             | -         |
+| define-option   | A function that returns a non-reactive configuration.                                                                                                                                            | function           | noop      |
+| option          | Reactive configuration.                                                                                                                                                                          | object             | {}        |
+| theme           | Theme to be applied. See `echarts.init`'s [`theme`](https://echarts.apache.org/zh/api.html#echarts.init)                                                                                         | [object, string]   | {}        |
+| group           | Group name to be used in chart [connection](https://echarts.apache.org/zh/api.html#echarts.connect). See [`echartsInstance.group`](https://echarts.apache.org/zh/api.html#echartsInstance.group) | object             | {}        |
+| init-options    | Optional chart init configurations. See `echarts.init`'s [`opts`](https://echarts.apache.org/zh/api.html#echarts.init)                                                                           | object             | {}        |
+| update-options  | Options for updating chart option. See `echartsInstance.setOption`'s [`opts`](https://echarts.apache.org/zh/api.html#echartsInstance.setOption)                                                  | object             | {}        |
+| onChartReady    | The callback function after initializing the chart.                                                                                                                                              | function(instance) | undefined |
+| auto-resize     | Whether the chart should be resized automatically whenever its root is resized.                                                                                                                  | boolean            | false     |
+| loading         | Whether the chart is in loading state.                                                                                                                                                           | boolean            | false     |
+| loading-options | Configuration item of loading animation. See `echartsInstance.showLoading`'s [`opts`](https://echarts.apache.org/zh/api.html#echartsInstance.showLoading)                                        | object             | {}        |
 
 ## Slots
 
-| Slot  | Description      |
-| ------- | -------------- |
-| default | Empty state bottom content.   |
-| image   | Empty state picture.      |
+| Slot    | Description                 |
+| ------- | --------------------------- |
+| default | Empty state bottom content. |
+| image   | Empty state picture.        |
 
 ## Methods
 
-| Method             | Description       |
-| ------------------ | ----------------- |
+| Method             | Description                  |
+| ------------------ | ---------------------------- |
 | getEchartsInstance | Gets an instance of echarts. |

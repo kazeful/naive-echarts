@@ -112,15 +112,11 @@ export default {
   },
   methods: {
     setOption(updateOptions) {
-      if (!this.chart) {
+      if (!this.chart)
         this.init()
-      }
-      else {
-        this.chart.setOption(
-          merge({}, this.defineOption(), this.option),
-          updateOptions || this.updateOptions,
-        )
-      }
+
+      else
+        this.chart.setOption(merge({}, this.defineOption(), this.option), updateOptions || this.updateOptions)
     },
     init() {
       if (!this.$el)

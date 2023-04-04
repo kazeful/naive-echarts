@@ -1,34 +1,18 @@
 <template>
   <div class="n-empty">
-    <div
-      class="n-empty-image"
-      :style="imageStyle"
-    >
-      <img
-        v-if="image"
-        :src="image"
-        ondragstart="return false"
-      >
-      <slot
-        v-else
-        name="image"
-      >
+    <div class="n-empty-image" :style="imageStyle">
+      <img v-if="image" :src="image" ondragstart="return false">
+      <slot v-else name="image">
         <img-empty />
       </slot>
     </div>
     <div class="n-empty-description">
-      <slot
-        v-if="$slots.description"
-        name="description"
-      />
+      <slot v-if="$slots.description" name="description" />
       <p v-else>
         {{ emptyDescription }}
       </p>
     </div>
-    <div
-      v-if="$slots.default"
-      class="n-empty-bottom"
-    >
+    <div v-if="$slots.default" class="n-empty-bottom">
       <slot />
     </div>
   </div>

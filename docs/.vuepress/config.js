@@ -9,7 +9,7 @@ module.exports = {
     nav: [
       {
         text: 'github',
-        link: 'https://github.com/moaningwind/naive-echarts',
+        link: 'https://github.com/kazeful/naive-echarts',
       },
     ],
     sidebar: ['/comps/install', '/comps/use'],

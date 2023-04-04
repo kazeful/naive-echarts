@@ -1,27 +1,13 @@
 <template>
-  <NEmpty
-    v-if="isEmpty"
-    v-bind="$props"
-  >
+  <NEmpty v-if="isEmpty" v-bind="$props">
     <template #image>
-      <slot
-        v-if="$slots.image"
-        name="image"
-      />
+      <slot v-if="$slots.image" name="image" />
     </template>
     <template #default>
-      <slot
-        v-if="$slots.default"
-        name="default"
-      />
+      <slot v-if="$slots.default" name="default" />
     </template>
   </NEmpty>
-  <EChart
-    v-else
-    ref="echarts"
-    v-bind="$attrs"
-    v-on="$listeners"
-  />
+  <EChart v-else ref="echarts" v-bind="$attrs" v-on="$listeners" />
 </template>
 
 <script>
