@@ -13,7 +13,7 @@ npm i naive-echarts
 ```js
 import Vue from 'vue'
 import NaiveEcharts from 'naive-echarts'
-import 'naive-echarts/dist/style.css'
+import 'naive-echarts/style.css'
 Vue.use(NaiveEcharts) // This registers two components, EChart and NChart
 ```
 
@@ -21,7 +21,7 @@ Vue.use(NaiveEcharts) // This registers two components, EChart and NChart
 
 ```js
 import { EChart, NChart } from 'naive-echarts'
-import 'naive-echarts/dist/style.css'
+import 'naive-echarts/style.css'
 
 export default {
   components: {

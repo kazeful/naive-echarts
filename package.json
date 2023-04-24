@@ -20,7 +20,8 @@
     ".": {
       "require": "./dist/index.cjs.min.js",
       "import": "./dist/index.esm.min.js"
-    }
+    },
+    "./style.css": "./dist/style.css"
   },
   "main": "dist/index.cjs.min.js",
   "module": "dist/index.esm.min.js",
