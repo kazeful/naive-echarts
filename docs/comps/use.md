@@ -367,8 +367,8 @@ export default {
 
 | Slot    | Description                 |
 | ------- | --------------------------- |
-| default | Empty state bottom content. |
 | image   | Empty state picture.        |
+| description | Empty state description. |
 
 ## Methods
 

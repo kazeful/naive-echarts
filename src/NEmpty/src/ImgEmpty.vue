@@ -1,66 +1,19 @@
 <template>
-  <svg
-    viewBox="0 0 79 86"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-  >
+  <svg viewBox="0 0 79 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-      <linearGradient
-        :id="`linearGradient-1-${id}`"
-        x1="38.8503086%"
-        y1="0%"
-        x2="61.1496914%"
-        y2="100%"
-      >
-        <stop
-          stop-color="#FCFCFD"
-          offset="0%"
-        />
-        <stop
-          stop-color="#EEEFF3"
-          offset="100%"
-        />
+      <linearGradient :id="`linearGradient-1-${id}`" x1="38.8503086%" y1="0%" x2="61.1496914%" y2="100%">
+        <stop stop-color="#FCFCFD" offset="0%" />
+        <stop stop-color="#EEEFF3" offset="100%" />
       </linearGradient>
-      <linearGradient
-        :id="`linearGradient-2-${id}`"
-        x1="0%"
-        y1="9.5%"
-        x2="100%"
-        y2="90.5%"
-      >
-        <stop
-          stop-color="#FCFCFD"
-          offset="0%"
-        />
-        <stop
-          stop-color="#E9EBEF"
-          offset="100%"
-        />
+      <linearGradient :id="`linearGradient-2-${id}`" x1="0%" y1="9.5%" x2="100%" y2="90.5%">
+        <stop stop-color="#FCFCFD" offset="0%" />
+        <stop stop-color="#E9EBEF" offset="100%" />
       </linearGradient>
-      <rect
-        :id="`path-3-${id}`"
-        x="0"
-        y="0"
-        width="17"
-        height="36"
-      />
+      <rect :id="`path-3-${id}`" x="0" y="0" width="17" height="36" />
     </defs>
-    <g
-      id="Illustrations"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
-    >
-      <g
-        id="B-type"
-        transform="translate(-1268.000000, -535.000000)"
-      >
-        <g
-          id="Group-2"
-          transform="translate(1268.000000, 535.000000)"
-        >
+    <g id="Illustrations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="B-type" transform="translate(-1268.000000, -535.000000)">
+        <g id="Group-2" transform="translate(1268.000000, 535.000000)">
           <path
             id="Oval-Copy-2"
             d="M39.5,86 C61.3152476,86 79,83.9106622 79,81.3333333 C79,78.7560045 57.3152476,78 35.5,78 C13.6847524,78 0,78.7560045 0,81.3333333 C0,83.9106622 17.6847524,86 39.5,86 Z"
@@ -82,11 +35,7 @@
               transform="translate(11.500000, 5.000000) scale(1, -1) translate(-11.500000, -5.000000) "
               points="2.84078316e-14 3 18 3 23 7 5 7"
             />
-            <polygon
-              id="Rectangle-Copy-11"
-              fill="#EDEEF2"
-              points="-3.69149156e-15 7 38 7 38 43 -3.69149156e-15 43"
-            />
+            <polygon id="Rectangle-Copy-11" fill="#EDEEF2" points="-3.69149156e-15 7 38 7 38 43 -3.69149156e-15 43" />
             <rect
               id="Rectangle-Copy-12"
               :fill="`url(#linearGradient-1-${id})`"
@@ -103,22 +52,9 @@
               points="24 7 41 7 55 -3.63806207e-12 38 -3.63806207e-12"
             />
           </g>
-          <rect
-            id="Rectangle-Copy-15"
-            :fill="`url(#linearGradient-2-${id})`"
-            x="13"
-            y="45"
-            width="40"
-            height="36"
-          />
-          <g
-            id="Rectangle-Copy-17"
-            transform="translate(53.000000, 45.000000)"
-          >
-            <mask
-              :id="`mask-4-${id}`"
-              fill="white"
-            >
+          <rect id="Rectangle-Copy-15" :fill="`url(#linearGradient-2-${id})`" x="13" y="45" width="40" height="36" />
+          <g id="Rectangle-Copy-17" transform="translate(53.000000, 45.000000)">
+            <mask :id="`mask-4-${id}`" fill="white">
               <use :xlink:href="`#path-3-${id}`" />
             </mask>
             <use

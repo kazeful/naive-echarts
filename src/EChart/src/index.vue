@@ -39,14 +39,8 @@ export default {
       type: Function,
       default: undefined,
     },
-    autoResize: {
-      type: Boolean,
-      default: false,
-    },
-    loading: {
-      type: Boolean,
-      default: false,
-    },
+    autoResize: Boolean,
+    loading: Boolean,
     loadingOptions: {
       type: Object,
       default: constant({}),

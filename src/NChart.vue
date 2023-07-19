@@ -1,10 +1,7 @@
 <template>
   <NEmpty v-if="isEmpty" v-bind="$props">
-    <template #image>
-      <slot v-if="$slots.image" name="image" />
-    </template>
-    <template #default>
-      <slot v-if="$slots.default" name="default" />
+    <template v-for="slot in Object.keys($scopedSlots)" #[slot]="scope">
+      <slot :name="slot" v-bind="scope" />
     </template>
   </NEmpty>
   <EChart v-else ref="echarts" v-bind="$attrs" v-on="$listeners" />
@@ -22,21 +19,18 @@ export default {
   },
   inheritAttrs: false,
   props: {
-    isEmpty: {
-      type: Boolean,
-      default: false,
-    },
+    isEmpty: Boolean,
     image: {
       type: String,
       default: '',
     },
     imageSize: {
-      type: Number,
-      default: undefined,
+      type: [String, Number],
+      default: 160,
     },
     description: {
       type: String,
-      default: '',
+      default: '暂无数据',
     },
   },
   methods: {
