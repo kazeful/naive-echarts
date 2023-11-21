@@ -20,10 +20,7 @@ export default {
   inheritAttrs: false,
   props: {
     isEmpty: Boolean,
-    image: {
-      type: String,
-      default: '',
-    },
+    image: String,
     imageSize: {
       type: [String, Number],
       default: 160,

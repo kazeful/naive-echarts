@@ -1,11 +1,13 @@
 {
   "name": "docs",
+  "version": "0.0.0",
   "scripts": {
     "build": "vuepress build",
     "dev": "vuepress dev"
   },
   "dependencies": {
-    "echarts": "^5.4.0"
+    "echarts": "^5.4.0",
+    "naive-echarts": "workspace:*"
   },
   "devDependencies": {
     "vuepress": "^1.9.7",

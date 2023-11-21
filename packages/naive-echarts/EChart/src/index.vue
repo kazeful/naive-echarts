@@ -5,7 +5,7 @@
 
 <script>
 import { init as initInstance } from 'echarts/core'
-import { constant, merge } from 'lodash-es'
+import { constant, merge, noop } from 'lodash-es'
 import { addResizeListener, removeResizeListener } from './resize-event'
 
 export default {
@@ -13,7 +13,7 @@ export default {
   props: {
     defineOption: {
       type: Function,
-      default: constant({}),
+      default: noop,
     },
     option: {
       type: Object,
@@ -23,10 +23,7 @@ export default {
       type: [Object, String],
       default: constant({}),
     },
-    group: {
-      type: String,
-      default: '',
-    },
+    group: [String, Number],
     initOptions: {
       type: Object,
       default: constant({}),
@@ -35,10 +32,7 @@ export default {
       type: Object,
       default: constant({}),
     },
-    onChartReady: {
-      type: Function,
-      default: undefined,
-    },
+    onChartReady: Function,
     autoResize: Boolean,
     loading: Boolean,
     loadingOptions: {

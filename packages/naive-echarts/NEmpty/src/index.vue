@@ -23,15 +23,9 @@ export default {
     [ImgEmpty.name]: ImgEmpty,
   },
   props: {
-    image: {
-      type: String,
-    },
-    imageSize: {
-      type: [String, Number],
-    },
-    description: {
-      type: String,
-    },
+    image: String,
+    imageSize: [String, Number],
+    description: String,
   },
   computed: {
     imageStyle() {
