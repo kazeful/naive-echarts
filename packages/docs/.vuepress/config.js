@@ -19,11 +19,6 @@ module.exports = {
     node: {
       global: true,
     },
-    resolve: {
-      alias: {
-        // '@': '/../src',
-      },
-    },
   },
   evergreen: true,
 }

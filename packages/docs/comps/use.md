@@ -215,6 +215,67 @@ export default {
 
 :::
 
+## Add Event Listener
+
+::: demo You can bind events with Vue's v-on directive. See supported events [here](https://echarts.apache.org/en/api.html#events)
+
+```vue
+<template>
+  <NChart class="h-75" :option="pieOption" @click="handleClick" />
+</template>
+
+<script>
+const pieOption = {
+  color: ['rgb(250, 200, 88)', 'rgb(145, 204, 117)'],
+  title: {
+    text: '本年工单执行情况',
+    left: 'center',
+  },
+  tooltip: {
+    trigger: 'item',
+  },
+  legend: {
+    top: 20,
+    left: 'left',
+    orient: 'vertical',
+  },
+  series: [
+    {
+      name: '执行情况',
+      type: 'pie',
+      radius: ['40%', '70%'],
+      avoidLabelOverlap: false,
+      label: {
+        show: true,
+        position: 'center',
+        fontSize: 20,
+        fontWeight: 'bold',
+        formatter: '任务总数: 1783',
+      },
+      data: [
+        { value: 1048, name: '待执行' },
+        { value: 735, name: '已完成' },
+      ],
+    },
+  ],
+}
+export default {
+  data() {
+    return {
+      pieOption,
+    }
+  },
+  methods: {
+    handleClick(e) {
+      console.log(e)
+    }
+  }
+}
+</script>
+```
+
+:::
+
 ## Use simultaneously
 
 ::: demo naive-echarts will merge defineOption and option using lodash's [merge](https://www.lodashjs.com/docs/lodash.merge#_mergeobject-sources) method.
@@ -344,14 +405,14 @@ export default {
 | description     | Text description of an empty state.                                                                                                                                                              | string             | -       |
 | define-option   | A function that returns a non-reactive configuration.                                                                                                                                            | function           | noop    |
 | option          | Reactive configuration.                                                                                                                                                                          | object             | {}      |
-| theme           | Theme to be applied. See `echarts.init`'s [`theme`](https://echarts.apache.org/zh/api.html#echarts.init)                                                                                         | object, string     | {}      |
-| group           | Group name to be used in chart [connection](https://echarts.apache.org/zh/api.html#echarts.connect). See [`echartsInstance.group`](https://echarts.apache.org/zh/api.html#echartsInstance.group) | string, number     | {}      |
-| init-options    | Optional chart init configurations. See `echarts.init`'s [`opts`](https://echarts.apache.org/zh/api.html#echarts.init)                                                                           | object             | {}      |
-| update-options  | Options for updating chart option. See `echartsInstance.setOption`'s [`opts`](https://echarts.apache.org/zh/api.html#echartsInstance.setOption)                                                  | object             | {}      |
+| theme           | Theme to be applied. See `echarts.init`'s [`theme`](https://echarts.apache.org/en/api.html#echarts.init)                                                                                         | object, string     | {}      |
+| group           | Group name to be used in chart [connection](https://echarts.apache.org/en/api.html#echarts.connect). See [`echartsInstance.group`](https://echarts.apache.org/en/api.html#echartsInstance.group) | string, number     | {}      |
+| init-options    | Optional chart init configurations. See `echarts.init`'s [`opts`](https://echarts.apache.org/en/api.html#echarts.init)                                                                           | object             | {}      |
+| update-options  | Options for updating chart option. See `echartsInstance.setOption`'s [`opts`](https://echarts.apache.org/en/api.html#echartsInstance.setOption)                                                  | object             | {}      |
 | on-chart-ready  | The callback function after initializing the chart.                                                                                                                                              | function(instance) | -       |
 | auto-resize     | Whether the chart should be resized automatically whenever its root is resized.                                                                                                                  | boolean            | false   |
 | loading         | Whether the chart is in loading state.                                                                                                                                                           | boolean            | false   |
-| loading-options | Configuration item of loading animation. See `echartsInstance.showLoading`'s [`opts`](https://echarts.apache.org/zh/api.html#echartsInstance.showLoading)                                        | object             | {}      |
+| loading-options | Configuration item of loading animation. See `echartsInstance.showLoading`'s [`opts`](https://echarts.apache.org/en/api.html#echartsInstance.showLoading)                                        | object             | {}      |
 
 ## Slots
 
