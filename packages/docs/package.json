@@ -6,11 +6,11 @@
     "dev": "vuepress dev"
   },
   "dependencies": {
-    "echarts": "^5.4.0",
+    "echarts": "^5.5.1",
     "naive-echarts": "workspace:*"
   },
   "devDependencies": {
-    "vuepress": "^1.9.7",
+    "vuepress": "^1.9.10",
     "vuepress-plugin-demo-container": "^0.2.0"
   }
 }

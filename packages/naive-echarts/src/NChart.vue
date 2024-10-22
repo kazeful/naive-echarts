@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     getEchartsInstance() {
-      return this.$refs.echarts && this.$refs.echarts.chart
+      return this.$refs.echarts?.chart
     },
   },
 }

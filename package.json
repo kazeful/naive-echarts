@@ -1,8 +1,8 @@
 {
   "name": "naive-echarts-monorepo",
   "version": "0.0.0",
-  "description": "EChart components for Vue2",
-  "packageManager": "pnpm@8.7.6",
+  "packageManager": "pnpm@8.15.9",
+  "description": "ECharts components for Vue2",
   "author": "Wind",
   "license": "MIT",
   "homepage": "https://github.com/kazeful/naive-echarts#readme",
@@ -26,8 +26,8 @@
     "prepublishOnly": "pnpm lint && pnpm build"
   },
   "devDependencies": {
-    "@antfu/eslint-config-basic": "^0.38.2",
-    "eslint": "^8.28.0",
-    "eslint-plugin-vue": "^9.0.0"
+    "@antfu/eslint-config": "^3.7.3",
+    "eslint": "^9.9.1",
+    "eslint-plugin-vue": "^9.27.0"
   }
 }
